@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Daglig Diamanten</title>
+        <title>Dagens Vejret</title>
 
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
@@ -34,6 +34,8 @@
                             <option value="onsdag"> Onsdag</option>
                             <option value="torsdag"> Torsdag</option>
                             <option value="fredag"> Fredag</option>
+							<option value="lørdag"> Lørdag</option>
+							<option value="sundag"> Sundag</option>
                         </select>
                         <br>
                         </td>
@@ -111,11 +113,6 @@
                                 <option value="681">681</option>
                                 <option value="924">924</option>
                                 <option value="1337">1337</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
                                 <option value="2025">2025</option>
                                 <option value="2026">2026</option>
                                 <option value="2027">2027</option>
@@ -138,21 +135,21 @@
                     <tr>
                         <td id="season">
                             <table>
-                                <!--<img id="summer" srcset="/images/seasons/summer.png" alt="summer" onclick="displaySeasonSelection()">-->
+                                <!--<img id="summer" srcset="images/seasons/summer.png" alt="summer" onclick="displaySeasonSelection()">-->
                                 <tr>
                                     <td>
-                                        <img id="springSmall" srcset="/images/seasons/spring.png 2x" alt="spring" onclick="displaySpring()">
+                                        <img id="springSmall" srcset="images/seasons/spring.png 2x" alt="spring" onclick="displaySpring()">
                                     </td>
                                     <td>
-                                        <img id="summerSmall" srcset="/images/seasons/summer.png 2x" alt="summer" onclick="displaySummer()">
+                                        <img id="summerSmall" srcset="images/seasons/summer.png 2x" alt="summer" onclick="displaySummer()">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img id="fallSmall" srcset="/images/seasons/fall.png 2x" alt="fall" onclick="displayFall()">
+                                        <img id="fallSmall" srcset="images/seasons/fall.png 2x" alt="fall" onclick="displayFall()">
                                     </td>
                                     <td>
-                                        <img id="winterSmall" srcset="/images/seasons/winter.png 2x" alt="winter" onclick="displayWinter()">
+                                        <img id="winterSmall" srcset="images/seasons/winter.png 2x" alt="winter" onclick="displayWinter()">
                                     </td>
                                 </tr>
                             </table>
@@ -174,26 +171,26 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <img id="sunny" srcset="/images/weather/sunny.png 3x" alt="sunny" onclick="displaySunny()">
+                                        <img id="sunny" srcset="images/weather/sunny.png 3x" alt="sunny" onclick="displaySunny()">
                                     </td>
                                     <td>
-                                        <img id="foggy" srcset="/images/weather/foggy.png 3x" alt="foggy" onclick="displayFoggy()">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img id="partially_clouded" srcset="/images/weather/partially_clouded.png 3x" alt="partially_clouded" onclick="displayPartiallyClouded()">
-                                    </td>
-                                    <td>
-                                        <img id="snowing" srcset="/images/weather/snowing.png 3x" alt="snowing" onclick="displaySnowing()">
+                                        <img id="foggy" srcset="images/weather/foggy.png 3x" alt="foggy" onclick="displayFoggy()">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img id="clouded" srcset="/images/weather/clouded.png 3x" alt="clouded" onclick="displayClouded()">
+                                        <img id="partially_clouded" srcset="images/weather/partially_clouded.png 3x" alt="partially_clouded" onclick="displayPartiallyClouded()">
                                     </td>
                                     <td>
-                                        <img id="raining" srcset="/images/weather/raining.png 3x" alt="raining" onclick="displayRaining()">
+                                        <img id="snowing" srcset="images/weather/snowing.png 3x" alt="snowing" onclick="displaySnowing()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="clouded" srcset="images/weather/clouded.png 3x" alt="clouded" onclick="displayClouded()">
+                                    </td>
+                                    <td>
+                                        <img id="raining" srcset="images/weather/raining.png 3x" alt="raining" onclick="displayRaining()">
                                     </td>
                                 </tr>
                             </table>
