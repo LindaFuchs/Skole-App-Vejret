@@ -1,0 +1,211 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Daglig Diamanten</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+
+        <!-- Day Selection -->
+        <table>
+            <!--<colgroup>
+                <col width="20%" style="background-color:red">
+                <col width="40%" style="background-color:orange">
+                <col width="40%" style="background-color:yellow">
+            </colgroup>-->
+            <td>
+                <table name= "full date" width="100%" height= "100%">
+                    <tr>
+                        <td>
+                        <label for="dag">Dag</label>
+                        <br>
+                        <select name="dag" id="dag">
+                            <option value="mandag"> Mandag</option>
+                            <option value="tirsdag"> Tirsdag</option>
+                            <option value="onsdag"> Onsdag</option>
+                            <option value="torsdag"> Torsdag</option>
+                            <option value="fredag"> Fredag</option>
+                        </select>
+                        <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <br>
+                        <label for="dato">Dato</label>
+                        <br>
+                        <select name="dato" id="dato">
+                            <option value="1"> 1</option>
+                            <option value="2"> 2</option>
+                            <option value="3"> 3</option>
+                            <option value="4"> 4</option>
+                            <option value="5"> 5</option>
+                            <option value="6"> 6</option>
+                            <option value="7"> 7</option>
+                            <option value="8"> 8</option>
+                            <option value="9"> 9</option>
+                            <option value="10"> 10</option>
+                            <option value="11"> 11</option>
+                            <option value="12"> 12</option>
+                            <option value="13"> 13</option>
+                            <option value="14"> 14</option>
+                            <option value="15"> 15</option>
+                            <option value="16"> 16</option>
+                            <option value="17"> 17</option>
+                            <option value="18"> 18</option>
+                            <option value="19"> 19</option>
+                            <option value="20"> 20</option>
+                            <option value="21"> 21</option>
+                            <option value="22"> 22</option>
+                            <option value="23"> 23</option>
+                            <option value="24"> 24</option>
+                            <option value="25"> 25</option>
+                            <option value="26"> 26</option>
+                            <option value="27"> 27</option>
+                            <option value="28"> 28</option>
+                            <option value="29"> 29</option>
+                            <option value="30"> 30</option>
+                            <option value="31"> 31</option>
+                        </select>
+                        <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <label for="måned">Måned</label>
+                            <br>
+                            <select name="måned" id="måned">
+                                <option value="januar"> Januar</option>
+                                <option value="februar"> Februar</option>
+                                <option value="marts"> Marts</option>
+                                <option value="april"> April</option>
+                                <option value="maj"> Maj</option>
+                                <option value="juni"> Juni</option>
+                                <option value="juli"> Juli</option>
+                                <option value="august"> August</option>
+                                <option value="september"> September</option>
+                                <option value="oktober"> Oktober</option>
+                                <option value="november"> November</option>
+                                <option value="december"> December</option>
+                            </select>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <label for="år">År</label>
+                            <br>
+                            <select name="år" id="år">
+                                <option value="0">0</option>
+                                <option value="681">681</option>
+                                <option value="924">924</option>
+                                <option value="1337">1337</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Season Selection -->
+            <td>
+                <table name= "season" width="100%" height= "100%">
+                    <tr>
+                        <td>
+                            <h1>Årstid</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="season">
+                            <table>
+                                <!--<img id="summer" srcset="/images/seasons/summer.png" alt="summer" onclick="displaySeasonSelection()">-->
+                                <tr>
+                                    <td>
+                                        <img id="springSmall" srcset="/images/seasons/spring.png 2x" alt="spring" onclick="displaySpring()">
+                                    </td>
+                                    <td>
+                                        <img id="summerSmall" srcset="/images/seasons/summer.png 2x" alt="summer" onclick="displaySummer()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="fallSmall" srcset="/images/seasons/fall.png 2x" alt="fall" onclick="displayFall()">
+                                    </td>
+                                    <td>
+                                        <img id="winterSmall" srcset="/images/seasons/winter.png 2x" alt="winter" onclick="displayWinter()">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Weather Selection -->
+            <td>
+                <table name= "weather" width="100%" height= "100%">
+                    <tr>
+                        <td>
+                            <h1>Vejr</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="weather">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img id="sunny" srcset="/images/weather/sunny.png 3x" alt="sunny" onclick="displaySunny()">
+                                    </td>
+                                    <td>
+                                        <img id="foggy" srcset="/images/weather/foggy.png 3x" alt="foggy" onclick="displayFoggy()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="partially_clouded" srcset="/images/weather/partially_clouded.png 3x" alt="partially_clouded" onclick="displayPartiallyClouded()">
+                                    </td>
+                                    <td>
+                                        <img id="snowing" srcset="/images/weather/snowing.png 3x" alt="snowing" onclick="displaySnowing()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="clouded" srcset="/images/weather/clouded.png 3x" alt="clouded" onclick="displayClouded()">
+                                    </td>
+                                    <td>
+                                        <img id="raining" srcset="/images/weather/raining.png 3x" alt="raining" onclick="displayRaining()">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+
+        
+
+        
+    </body>
+
+</html>
